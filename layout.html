@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        nav {
+            background-color: #3686e9;
+            height: 50px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+
+
+        }
+
+        .content {
+            display: flex;
+            float: flex-end;
+        }
+
+        .content span {
+            margin-left: 25px;
+            top: 30px;
+
+        }
+
+        .content span:hover {
+            color: white;
+            cursor: pointer;
+            
+        }
+
+        .main {
+            position: relative;
+            border: 1px solid black;
+            margin: 20px;
+            justify-content: center;
+            justify-items: center;
+            background-color: rgb(4, 5, 71);
+            padding-top: 40px;
+            border-radius: 25px;
+
+
+        }
+
+        .box {
+
+            position: relative;
+            border: 2px solid black;
+            width: 40vw;
+            height: 70vh;
+            margin: 10px;
+            display: inline-block;
+            border-radius: 25px;
+
+        }
+
+        .box1 {
+            background-color: aqua;
+        }
+
+        .box2 {
+            background-color: blue
+        }
+
+        .box3 {
+            position: relative;
+            border: 1px solid black;
+            background-color: bisque;
+            height: 150px;
+            width: 80vw;
+            padding: 3px;
+            margin-left: 81px;
+            border-radius: 25px;
+        }
+
+        .fix {
+            position: fixed;
+            background-color: blueviolet;
+            border-radius: 55px;
+            border: 3px dashed rgb(100, 39, 158);
+            height: 60px;
+            width: 60px;
+            z-index: 999;
+            right: 20px;
+            bottom: 30vh;
+        }
+        .fix:hover{
+            padding:10px;
+            background-color: rgb(149, 106, 190);
+            transition-delay: 1ms;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="content">
+            <span>home</span>
+            <span>Sign in</span>
+            <span>topic</span>
+            <span>contact</span>
+            <span>about</span>
+        </div>
+
+    </nav>
+
+    <div class="main">
+        <div>
+            <span class="box box1"> </span>
+            <span class="box box2"></span>
+        </div>
+    </div>
+    <div class="box3"></div>
+    <div class="fix"></div>
+
+</body>
+
+</html>
