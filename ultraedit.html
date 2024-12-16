@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ultraedit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .logo img{
+            width: 164px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: "Segoe UI";
+            margin: 5px;
+            position:sticky;
+            top: 0;
+            background-color: white;
+            z-index: 100;
+        }
+
+        .right ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+        .right ul li{
+            display: flex;
+            align-items: center;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+            
+        }
+        .text{
+            display: flex;
+            margin-inline: 100px;
+        }
+        
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(6,150px);
+            gap: 10px;
+        }
+        .grid-item{
+            display: flex;
+            border:2px solid black;
+            height: 150px;
+            width:150px;
+            justify-content: center;
+            align-items: center;
+            background-color: grey;
+            z-index:1;
+            
+        }
+        .right ul li:hover{
+            color: grey;
+        }
+        .right ul li:hover svg{
+            color: grey;
+        }
+        .grid-item:hover{
+            height: 190px;
+            width: 190px;
+            z-index: 2;
+            margin: -25px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <nav>
+            <div class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp">
+
+            </div>
+            <div class="right">
+                <ul>
+                    <li>product<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                    <li>For business<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                    <li>Resources<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                    <li>Support<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                    <li>Our company<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                            <path d="M6.57757 15.4816C5.1628 16.324 1.45336 18.0441 3.71266 20.1966C4.81631 21.248 6.04549 22 7.59087 22H16.4091C17.9545 22 19.1837 21.248 20.2873 20.1966C22.5466 18.0441 18.8372 16.324 17.4224 15.4816C14.1048 13.5061 9.89519 13.5061 6.57757 15.4816Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16.5 6.5C16.5 8.98528 14.4853 11 12 11C9.51472 11 7.5 8.98528 7.5 6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5Z" stroke="currentColor" stroke-width="1.5" />
+                        </svg>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                            <path d="M17.5 17.5L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+        <div class="content">
+            <h2>Ultraedit: Shaping world of editing</h2>
+        </div>
+        <div class="content">
+            <div class="text">
+                
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptas repellendus blanditiis facere porro ratione, quibusdam nemo, consequuntur quae praesentium, pariatur at tempora vel molestiae esse consequatur? Odio, beatae ratione.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laborum molestiae facilis nam. Architecto voluptatibus excepturi iure aut reprehenderit dolor sint vel perferendis dolorem odit.
+            </div>
+         </div>
+        <div class="content">
+
+        <div class="grid">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">8</div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
