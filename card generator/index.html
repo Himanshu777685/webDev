@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #main {
+            display: flex; 
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            align-items: flex-start;
+            /* margin: 10px; */
+        }
+        form{
+            /* align-items: flex-start; */
+            gap: 5px;
+            margin: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            align-self: center;
+            border-radius: 5px;
+            border: 1px solid #555;
+            padding: 5px;
+            display: block;
+        }
+
+        .card{
+            display:inline-block;
+            border: 2px solid #555;
+            margin: 30px;
+            max-width: 280px;
+            min-width: 200px;
+            padding: 10px;
+
+        }
+        .profile{
+            margin: 5px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            /* border: 1px solid red; */
+            overflow: hidden;
+            
+        }
+        .name{
+            color: #555;
+        }
+
+        .profession{
+            padding: 2px;
+        }
+        .about{
+            padding-top: 7px;
+        }
+
+        .profile img{
+            height: 50px;
+            width: 50px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <form>
+            <input type="text" placeholder="Image Link">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Profession">
+            <input type="text" placeholder="About">
+            <input type="submit">
+        </form>
+
+    
+
+    <div class="card">
+        <div class="profile">
+            <img src="https://i.pinimg.com/736x/1d/27/75/1d2775cc2620e06dea2c8d50495b43b4.jpg">
+        </div>
+        <div class="name">
+            <h2>Harsh kodder</h2>
+        </div>
+        <div class="profession">
+            <h3>Kodder</h3>
+        </div>
+        <div class="about">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa necessitatibus libero laboriosam ipsam porro vero, eligendi assumenda qui harum sit?</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
