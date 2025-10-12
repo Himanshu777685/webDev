@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email & Password Validator</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .alert{
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background:  #007bff;
+      color: white;
+      height: 80px;
+      width: 250px;
+      border: 2px solid  #007bff;
+      border-radius: 10px;
+      position:fixed;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Login Form</h2>
+    <form autocomplete="off" id="loginForm">
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Enter your email">
+        <small id="emailError"> Username must be 3-15 chars (letters, numbers, or _ only)</small>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="text" id="password" placeholder="Enter your password">
+        <small id="passError"> Weak Password! (Use upper, lower, digit, special char & min 8 chars)</small>
+      </div>
+      
+      <button type="su bmit">Validate</button>
+    </form>
+
+
+  </div>
+  
+  <div class="alert">
+    <div class="content">
+      Form Successfully Submitted...
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
