@@ -40,7 +40,7 @@ This repo is primarily for **learning and personal projects**, but suggestions a
 
 ## 🙋‍♂️ About Me
 
-I'm a first-year B.Tech CSE (Data Science) student passionate about web development, programming, and building cool things. Follow my journey!
+I'm a second-year B.Tech CSE (Data Science) student passionate about web development, programming, and building cool things. Follow my journey!
 
 📌 [GitHub Profile](https://github.com/Himanshu777685)
 
