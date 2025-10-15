@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacking Card Carousel</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body class="bg-primary-bg min-h-screen flex items-center justify-center p-4 font-sans text-white">
+
+    <!-- Carousel Container -->
+    <div id="carousel-container">
+
+        <!-- Card Stack Area (Left) -->
+        <div class="card-stack-area" style="min-height: 400px; max-width: 300px;">
+            <div id="card-stack" class="relative w-[250px] h-[350px]">
+                <!-- Cards will be generated here by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Content and Controls Area (Right) -->
+        <div class="content-area">
+            <p id="slide-index">1/5</p>
+            <h1 id="content-name">Loading...</h1>
+            <p id="content-description">Loading description...</p>
+
+            <!-- Navigation Controls and Add/Edit/Delete Buttons -->
+            <div class="controls-container">
+                
+                <!-- Row 1: Nav buttons (Circular Arrows) -->
+                <div class="nav-buttons">
+                    <button id="prev-button"
+                        class="nav-button"
+                        aria-label="Previous Slide">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                    </button>
+                    <button id="next-button"
+                        class="nav-button"
+                        aria-label="Next Slide">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </button>
+                </div>
+                
+                <!-- Row 2: Action buttons (Circular Icons) -->
+                <div class="action-buttons">
+                    <button id="add-card-button" 
+                        class="action-button"
+                        aria-label="Add New Card">
+                        <!-- Plus Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                    </button>
+                    <button id="edit-card-button" 
+                        class="action-button"
+                        aria-label="Edit Current Card">
+                        <!-- Pencil Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
+                    </button>
+                    <button id="delete-card-button" 
+                        class="action-button"
+                        aria-label="Delete Current Card">
+                        <!-- Trash Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Add/Edit Card Modal (Re-used for both functions) -->
+    <div id="add-card-modal" class="modal-overlay hidden opacity-0">
+        <div class="modal-content scale-95">
+            <h2 id="modal-title" class="modal-header">Add New Carousel Card</h2>
+            <form id="add-card-form">
+                <div class="form-group">
+                    <label for="card-name" class="form-label">Name / Title</label>
+                    <input type="text" id="card-name" required
+                        class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="card-description" class="form-label">Description</label>
+                    <textarea id="card-description" rows="3" required
+                        class="form-textarea"></textarea>
+                </div>
+                <div class="form-group" style="margin-bottom: 1.5rem;">
+                    <label for="card-image" class="form-label">Image URL (Optional)</label>
+                    <input type="url" id="card-image" 
+                        class="form-input">
+                    <p class="input-hint">Defaults to a placeholder image if left empty.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="cancel-button"
+                        class="modal-button">
+                        Cancel
+                    </button>
+                    <button type="submit" id="modal-submit-button"
+                        class="modal-button">
+                        Add Card
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="script.js">
+       
+       
+
+    </script>
+</body>
+</html>
